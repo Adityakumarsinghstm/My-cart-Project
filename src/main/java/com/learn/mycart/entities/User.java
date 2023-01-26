@@ -10,25 +10,25 @@ import javax.persistence.Id;
 public class User {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@Column(length=10)
+	@Column(length = 10)
 	private int userId;
-	
-	@Column(length=100)
+
+	@Column(length = 100)
 	private String userName;
-	
-	@Column(length=100)
+
+	@Column(length = 100)
 	private String userEmail;
-	
-	@Column(length=100)
+
+	@Column(length = 100)
 	private String userPassword;
-	
-	@Column(length=12)
+
+	@Column(length = 12)
 	private String userPhone;
-	
-	@Column(length=1500)
+
+	@Column(length = 1500)
 	private String userPic;
-	
-	@Column(length=1500)
+
+	@Column(length = 1500)
 	private String userAddress;
 
 	public User() {
@@ -114,9 +114,12 @@ public class User {
 	public void setUserAddress(String userAddress) {
 		this.userAddress = userAddress;
 	}
-	
-	
-	
-	
+
+	@Override
+	public String toString() {
+		return "User [userId=" + userId + ", userName=" + userName + ", userEmail=" + userEmail + ", userPassword="
+				+ userPassword + ", userPhone=" + userPhone + ", userPic=" + userPic + ", userAddress=" + userAddress
+				+ "]";
+	}
 
 }
