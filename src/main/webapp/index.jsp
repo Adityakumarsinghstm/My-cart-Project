@@ -11,6 +11,7 @@
 <%@include file="components/common_css_js.jsp" %>
 </head>
 <body>
+<%@include file="components/navbar.jsp" %>
 	<h1>This is index page</h1>
 	<h1>Creation session factory object</h1>
 
