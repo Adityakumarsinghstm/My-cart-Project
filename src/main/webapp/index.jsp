@@ -7,6 +7,8 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Index Page : My Cart</title>
+
+<%@include file="components/common_css_js.jsp" %>
 </head>
 <body>
 	<h1>This is index page</h1>
