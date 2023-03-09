@@ -13,6 +13,7 @@
 		<div class="row mt-5">
 			<div class="col-md-4 offset-md-4">
 				<div class="card">
+				<%@include file="components/message.jsp" %>
 					<div class="card-body px-5">
 
 

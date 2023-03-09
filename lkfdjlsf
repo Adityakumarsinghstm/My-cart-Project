@@ -1,0 +1,106 @@
+[33mcommit aade01e968724c9323545554e129fa84faa3a378[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Merge: 6d76054 2c0e654
+Author: Aditya <adityasingh62065@gmail.com>
+Date:   Fri Jan 27 16:41:02 2023 +0530
+
+    Merge branch 'aditya'
+
+[33mcommit 2c0e654369d13d97ff591205b0fa1ed718bb4325[m[33m ([m[1;31morigin/aditya[m[33m, [m[1;32maditya[m[33m)[m
+Author: Aditya <adityasingh62065@gmail.com>
+Date:   Fri Jan 27 16:40:32 2023 +0530
+
+    Registration using servlet
+
+[33mcommit 3b99dd105caeb13364121af749b37843864d4681[m
+Author: Aditya <adityasingh62065@gmail.com>
+Date:   Fri Jan 27 14:15:32 2023 +0530
+
+    Designing registration page
+
+[33mcommit eb4b96d82e2443d324ad63890a5b28c577d39aed[m
+Author: Aditya <adityasingh62065@gmail.com>
+Date:   Fri Jan 27 11:49:04 2023 +0530
+
+    added bootstrap
+
+[33mcommit 52d5e4bb14a4cba5160952ff828575859262cd60[m
+Author: Aditya <adityasingh62065@gmail.com>
+Date:   Thu Jan 26 17:19:11 2023 +0530
+
+    completed category and product entity
+
+[33mcommit 387baab779029caf5d815b97b11cc5b626d15504[m
+Author: Aditya <adityasingh62065@gmail.com>
+Date:   Thu Jan 26 16:48:03 2023 +0530
+
+    comleted category entity
+
+[33mcommit 6d76054647918965a0c2b69ad321faa2a52042f0[m[33m ([m[1;31morigin/main[m[33m)[m
+Merge: 7edf532 8433dc9
+Author: Aditya <adityasingh62065@gmail.com>
+Date:   Thu Jan 26 16:40:14 2023 +0530
+
+    Merge branch 'aditya'
+
+[33mcommit 8433dc930e95142a723ca9fcdf7d21965302b5ca[m
+Author: Aditya <adityasingh62065@gmail.com>
+Date:   Thu Jan 26 16:39:14 2023 +0530
+
+    added comment in product entity
+
+[33mcommit 7edf532e14edc15bb0d5c9956765e37fe809b253[m
+Merge: 526a468 182474c
+Author: Aditya <adityasingh62065@gmail.com>
+Date:   Thu Jan 26 16:34:02 2023 +0530
+
+    Merge branch 'aditya'
+
+[33mcommit 182474cc237585874d52a7da17a50826188d5714[m
+Author: Aditya <adityasingh62065@gmail.com>
+Date:   Thu Jan 26 16:32:08 2023 +0530
+
+    added comment in category entity
+
+[33mcommit 526a46884f9b738bec66266699fff66a07edc16f[m
+Merge: b4f024b 4932a1a
+Author: Aditya <adityasingh62065@gmail.com>
+Date:   Thu Jan 26 16:09:02 2023 +0530
+
+    Merge branch 'aditya'
+
+[33mcommit 4932a1a1c1e09a48c154f4d01f7a815762f17698[m
+Author: Aditya <adityasingh62065@gmail.com>
+Date:   Thu Jan 26 16:08:21 2023 +0530
+
+    completed user entity
+
+[33mcommit b4f024b47c80a81d5fb589dd898a3d89a5ac3665[m
+Merge: 75b8ebb 761c399
+Author: Aditya <adityasingh62065@gmail.com>
+Date:   Thu Jan 26 15:55:29 2023 +0530
+
+    Merge branch 'aditya'
+
+[33mcommit 761c399612ae1a78fd10454986e42ad7708cb835[m
+Author: Aditya <adityasingh62065@gmail.com>
+Date:   Thu Jan 26 15:55:00 2023 +0530
+
+    added entities
+
+[33mcommit 75b8ebb72a37d2f87570a8931b234f63e893b85c[m
+Author: Aditya <adityasingh62065@gmail.com>
+Date:   Thu Jan 26 15:43:14 2023 +0530
+
+    added three entities class
+
+[33mcommit 078d7a0903e4b3da1ef5fd3424a2c7883693a451[m
+Author: Aditya <adityasingh62065@gmail.com>
+Date:   Thu Jan 26 15:24:43 2023 +0530
+
+    Lec-3 DB and Hibernate configuration
+
+[33mcommit 7b3fb8a56b4c7833c8b52d047d32fa0dadf7d0db[m
+Author: Aditya <adityasingh62065@gmail.com>
+Date:   Wed Jan 25 08:37:58 2023 +0530
+
+    first commit
