@@ -1,3 +1,8 @@
+<%@page import="com.learn.mycart.entities.User"%>
+<%
+User user1 = (User) session.getAttribute("current-user");
+%>
+
 <nav class="navbar navbar-expand-lg navbar-dark bg-custom">
 	<div class="container">
 		<a class="navbar-brand" href="index.jsp">MyCart</a>
@@ -10,8 +15,8 @@
 
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
 			<ul class="navbar-nav mr-auto">
-				<li class="nav-item active"><a class="nav-link" href="index.jsp">Home
-						<span class="sr-only">(current)</span>
+				<li class="nav-item active"><a class="nav-link"
+					href="index.jsp">Home <span class="sr-only">(current)</span>
 				</a></li>
 
 				<li class="nav-item dropdown"><a
@@ -27,11 +32,29 @@
 
 			</ul>
 			<ul class="navbar-nav ml-auto">
+				<%
+				if (user1 == null) {
+				%>
+
 				<li class="nav-item active"><a class="nav-link"
 					href="login.jsp">Login</a></li>
 				<li class="nav-item active"><a class="nav-link"
 					href="register.jsp">Register</a></li>
+
+
+				<%
+				} else {
+				%>
+
+				<li class="nav-item active"><a class="nav-link" href="#!"><%=user1.getUserName()%></a></li>
+				<li class="nav-item active"><a class="nav-link" href="Logout">Logout</a></li>
+
+
+				<%
+				}
+				%>
 			</ul>
+
 		</div>
 	</div>
 </nav>
