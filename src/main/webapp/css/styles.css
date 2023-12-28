@@ -10,3 +10,7 @@
 	background: #e2e2e2;
 	cursor: pointer;
 }
+.list-group-item-action.active{
+	background:#673ab7!important;
+	border:#673ab7!important;
+}

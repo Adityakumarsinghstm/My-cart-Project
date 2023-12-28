@@ -212,7 +212,7 @@ if (user == null) {
 							<%for(Category c:list)
 								{
 								%>
-								<option><%=c.getCategoryTitle() %></option>
+								<option value="<%=c.getCategoryId()%>"><%=c.getCategoryTitle() %></option>
 								
 								<%} %>
 							</select>
