@@ -13,99 +13,135 @@ import javax.persistence.ManyToOne;
 public class Product {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int pId;
-	private String pName;
-	@Column(length=3000)
-	private String pDescription;
-	private String pPhoto;
-	private int pPrice;
-	private int pDiscount;
-	private int pQuantity;
-	
-	@ManyToOne
-	private Category  category ;
-	public Product() {
-		super();
-		// TODO Auto-generated constructor stub
-	}
-	public Product(int pId, String pName, String pDescription, String pPhoto, int pPrice, int pDiscount,
-			int pQuantity) {
-		super();
-		this.pId = pId;
-		this.pName = pName;
-		this.pDescription = pDescription;
-		this.pPhoto = pPhoto;
-		this.pPrice = pPrice;
-		this.pDiscount = pDiscount;
-		this.pQuantity = pQuantity;
-	}
-	public Product(String pName, String pDescription, String pPhoto, int pPrice, int pDiscount, int pQuantity, Category category) {
-		super();
-		this.pName = pName;
-		this.pDescription = pDescription;
-		this.pPhoto = pPhoto;
-		this.pPrice = pPrice;
-		this.pDiscount = pDiscount;
-		this.pQuantity = pQuantity;
-		this.category = category;
-	}
-	public int getpId() {
-		return pId;
-	}
-	public void setpId(int pId) {
-		this.pId = pId;
-	}
-	public String getpName() {
-		return pName;
-	}
-	public void setpName(String pName) {
-		this.pName = pName;
-	}
-	public String getpDescription() {
-		return pDescription;
-	}
-	public void setpDescription(String pDescription) {
-		this.pDescription = pDescription;
-	}
-	public String getpPhoto() {
-		return pPhoto;
-	}
-	public void setpPhoto(String pPhoto) {
-		this.pPhoto = pPhoto;
-	}
-	public int getpPrice() {
-		return pPrice;
-	}
-	public void setpPrice(int pPrice) {
-		this.pPrice = pPrice;
-	}
-	public int getpDiscount() {
-		return pDiscount;
-	}
-	public void setpDiscount(int pDiscount) {
-		this.pDiscount = pDiscount;
-	}
-	public int getpQuantity() {
-		return pQuantity;
-	}
-	public void setpQuantity(int pQuantity) {
-		this.pQuantity = pQuantity;
-	}
-	
-	public Category getCategory() {
-		return category;
-	}
-	public void setCategory(Category category) {
-		this.category = category;
-	}
-	@Override
-	public String toString() {
-		return "Product [pId=" + pId + ", pName=" + pName + ", pDescription=" + pDescription + ", pPhoto=" + pPhoto
-				+ ", pPrice=" + pPrice + ", pDiscount=" + pDiscount + ", pQuantity=" + pQuantity + "]";
-	}
-	
-	
-	
-	
+private   int productId;
+private String productName;
+@Column(length = 3000)
+private String productDescription;
+private String productPic;
+private int productPrice;
+private int productDiscount;
+private int productQuantity;
+@ManyToOne
+private Category category;
+
+public Product() {
+	super();
+	// TODO Auto-generated constructor stub
+}
+
+
+public Product(String productName, String productDescription, String productPic, int productPrice, int productDiscount,
+		int productQuantity,Category category) {
+	super();
+	this.productName = productName;
+	this.productDescription = productDescription;
+	this.productPic = productPic;
+	this.productPrice = productPrice;
+	this.productDiscount = productDiscount;
+	this.productQuantity = productQuantity;
+	this.category=category;
+}
+
+
+public Product(int productId, String productName, String productDescription, String productPic, int productPrice,
+		int productDiscount, int productQuantity,Category category) {
+	super();
+	this.productId = productId;
+	this.productName = productName;
+	this.productDescription = productDescription;
+	this.productPic = productPic;
+	this.productPrice = productPrice;
+	this.productDiscount = productDiscount;
+	this.productQuantity = productQuantity;
+	this.category=category;
+}
+
+
+public int getProductId() {
+	return productId;
+}
+
+
+public void setProductId(int productId) {
+	this.productId = productId;
+}
+
+
+public String getProductName() {
+	return productName;
+}
+
+
+public void setProductName(String productName) {
+	this.productName = productName;
+}
+
+
+public String getProductDescription() {
+	return productDescription;
+}
+
+
+public void setProductDescription(String productDescription) {
+	this.productDescription = productDescription;
+}
+
+
+public String getProductPic() {
+	return productPic;
+}
+
+
+public void setProductPic(String productPic) {
+	this.productPic = productPic;
+}
+
+
+public int getProductPrice() {
+	return productPrice;
+}
+
+
+public void setProductPrice(int productPrice) {
+	this.productPrice = productPrice;
+}
+
+
+public int getProductDiscount() {
+	return productDiscount;
+}
+
+
+public void setProductDiscount(int productDescount) {
+	this.productDiscount = productDescount;
+}
+
+
+public int getProductQuantity() {
+	return productQuantity;
+}
+
+
+public void setProductQuantity(int productQuantity) {
+	this.productQuantity = productQuantity;
+}
+
+
+public Category getCategory() {
+	return category;
+}
+
+
+public void setCategory(Category category) {
+	this.category = category;
+}
+
+
+@Override
+public String toString() {
+	return "Product [productId=" + productId + ", productName=" + productName + ", productDescription="
+			+ productDescription + ", productPic=" + productPic + ", productPrice=" + productPrice
+			+ ", productDiscount=" + productDiscount + ", productQuantity=" + productQuantity + "]";
+}
 
 }

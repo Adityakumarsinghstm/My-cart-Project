@@ -11,42 +11,37 @@ import org.hibernate.query.Query;
 
 
 public class CategoryDao {
-    private SessionFactory factory;
+	private SessionFactory factory;
 
-	
-    public CategoryDao(SessionFactory factory) {
-		super();
-		this.factory = factory;
-	}
+	 public CategoryDao(SessionFactory  factory) {
+	 	super();
+	 	this.factory = factory;
+	 }
+	 public int saveCategory(Category cat)
+	 {
 
-
-	public int saveCategory(Category cat)
-    {
-        Session session = this.factory.openSession();
-        Transaction txt = session.beginTransaction();
-        int catId = (Integer) session.save(cat);
-        txt.commit();
-        session.close();
-        return catId;
-    }
-	
-	public List<Category> getCategory()
-	{
-		Session session = this.factory.openSession();
-		Query query = session.createQuery("from Category");
-		List<Category> list = query.list();
-		return list;
-	}
-	public Category getCategoryById(int cid)
-	{
-		Category cat = null;
-		try {
-			Session session = this.factory.openSession();
-			cat = session.get(Category.class, cid);
-		} catch (Exception e) {
-			// TODO: handle exception
+			Session session=this.factory.openSession();
+			org.hibernate.Transaction tx=session.beginTransaction();
+	      int  catid=(Integer)session.save(cat);
+				tx.commit();
+	    	 session.close();
+	   	 return catid;
+	 }
+	 public List<Category> getCategories(){
+	Session session=	 this.factory.openSession();
+	Query<Category> li=	 session.createQuery("from Category");
+	  List<Category> list=   li.list();
+	  return list;
+	 }
+	 public Category getcatByid(int cid) {
+		 Category c=null;
+		 try {
+		Session s=	this.factory.openSession();
+	     c=s.get(Category.class,cid);
+	     s.close();
+	     } catch (Exception e) {
 			e.printStackTrace();
 		}
-		return cat;
-	}
+		 return c;
+	 }
 }
