@@ -10,37 +10,44 @@ import org.hibernate.query.Query;
 import com.learn.mycart.entities.Product;
 
 public class ProductDao {
-	private SessionFactory factory;
-
-	public ProductDao(SessionFactory factory) {
-		this.factory = factory;
-	}
-
-	public boolean saveProduct(Product product) {
-		boolean f = false;
-		try {
-			Session session = this.factory.openSession();
-			Transaction txt = session.beginTransaction();
-
-			session.save(product);
-
-			txt.commit();
-			session.close();
-			f = true;
-		} catch (Exception e) {
-			// TODO: handle exception
-			e.printStackTrace();
-			f = false;
-		}
-		return f;
-	}
 	
-	//Fetching all product data
-	public List<Product> getAllProduct()
-	{
-		Session s =factory.openSession();
-		Query query =  s.createQuery("from Product");
-		List<Product> products = query.list();
-		return products;
-	}
+		 private SessionFactory factory;
+
+		 public ProductDao(SessionFactory  factory) {
+		 	super();
+		 	this.factory = factory;
+		 }
+		 public boolean saveProduct(Product product)
+		 { 
+			 boolean b=false;
+	            try {
+	            	Session session=this.factory.openSession();
+	            	org.hibernate.Transaction tx=session.beginTransaction();
+	                session.save(product);
+	            	tx.commit();
+	   	    	    session.close();
+	   	        	 b=true;
+				} catch (Exception e) {
+					e.printStackTrace();
+					b=false;
+				}
+	            return b;
+		 }
+		 
+		 //get all products
+		 public List<Product> getProducts(){
+				Session session=	 this.factory.openSession();
+				Query<Product> li=	 session.createQuery("from Product");
+				  List<Product> list=   li.list();
+				  return list;
+				 }
+		 //get prdoct by catid
+		 public List<Product> getProducbyId(int cid){
+				Session session=	 this.factory.openSession();
+				Query<Product> li=	 session.createQuery("from Product as p where p.category.categoryId=:id");
+				li.setParameter("id",cid);
+				  List<Product> list=   li.list();
+				  return list;
+				 }
 }
+

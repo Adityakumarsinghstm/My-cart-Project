@@ -10,6 +10,18 @@
   	<description></description>
   	<servlet-class>com.learn.mycart.servlets.RegisterServlet</servlet-class>
   </servlet>
+   <servlet>
+  	<servlet-name>PaymentServlet</servlet-name>
+  	<display-name>PaymentServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.learn.mycart.servlets.PaymentServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>EditProfileServlet</servlet-name>
+  	<display-name>EditProfileServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.learn.mycart.servlets.EditProfileServlet</servlet-class>
+  </servlet>
   <servlet>
   	<servlet-name>LoginServlet</servlet-name>
   	<display-name>LoginServlet</display-name>
@@ -43,5 +55,13 @@
   <servlet-mapping>
   	<servlet-name>productOperationServlet</servlet-name>
   	<url-pattern>/productOperationServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>PaymentServlet</servlet-name>
+  	<url-pattern>/PaymentServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>EditProfileServlet</servlet-name>
+  	<url-pattern>/EditProfileServlet</url-pattern>
   </servlet-mapping>
 </web-app>
